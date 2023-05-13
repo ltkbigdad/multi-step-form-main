@@ -1,4 +1,5 @@
 import {Routes, Route} from "react-router-dom"
+import './style.css'
 
 import { YourInfo } from "./pages/yourInfo"
 import { SelectPlan} from "./pages/selectPlan"
@@ -10,15 +11,20 @@ import { SideBar } from "./components/sideBar"
 export const App = () => {
   return(
     <>
-      <SideBar/>
-      
-      <Routes>
-        <Route path="/" element={<YourInfo/>}/>
-        <Route path="/selectplan" element={<SelectPlan/>}/>
-        <Route path="/addon" element={<AddOn/>}/>
-        <Route path="/finishing" element={<Finishing/>}/>
-        <Route path="/thankyou" element={<ThankYou/>}/>
-      </Routes>
+      <div className="Container"> 
+        <div className="Content">
+          <div className="contentBox">
+            <SideBar/>            
+            <Routes>
+              <Route path="/" element={<YourInfo/>}/>
+              <Route path="/selectplan" element={<SelectPlan/>}/>
+              <Route path="/addon" element={<AddOn/>}/>
+              <Route path="/finishing" element={<Finishing/>}/>
+              <Route path="/thankyou" element={<ThankYou/>}/>
+            </Routes>
+          </div>        
+        </div>       
+      </div>
     </>
   )
 }

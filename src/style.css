@@ -1,0 +1,48 @@
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+.Content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border: 1px solid red;
+    background: red;
+
+}
+
+.contentBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border: 1px solid blue;
+}
+
+
+@media(min-width: 1023px) {
+    
+    /* .Container{
+        
+    }
+    
+    .Content{
+        
+    
+    } */
+    
+    .contentBox{
+       flex-direction: row;
+       justify-content: space-between;
+    }
+
+}
