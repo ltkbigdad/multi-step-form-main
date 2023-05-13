@@ -13,7 +13,7 @@ export const Ul = styled.div`
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 170px;
+    height: 20%;
 
     @media(min-width: 1023px) {
         width: 250px;
@@ -31,7 +31,7 @@ export const Ul = styled.div`
 `
 export const Card = styled.div`
     margin-top: 30px;
-    border: 1px solid red;
+    
 
     
     @media(min-width: 1023px) {

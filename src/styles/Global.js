@@ -11,6 +11,7 @@ export const Global = createGlobalStyle`
 
     body {
         font-family: 'Ubuntu', sans-serif;
+        background: var(--Magnolia);
        
         
         
